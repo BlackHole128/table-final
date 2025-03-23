@@ -1,0 +1,112 @@
+/* ===== Table Container ===== */
+/* .table-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     overflow-x: auto;
+} */
+
+/* ===== Table Styling ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-x: auto;
+    
+}
+
+/* ===== Table Header ===== */
+thead {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: auto;
+}
+
+/* ===== Stretchable Input Fields ===== */
+input {
+    width: 100%;
+    min-width: 120px;
+    /* Ensures inputs stretch as needed */
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* ===== Multi-Input Styling ===== */
+.multi-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.multi-input-container input {
+    width: 100%;
+}
+
+/* ===== Buttons Styling ===== */
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+/* Add Row Button */
+.add-row-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.add-row-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Multi-Input Add Button */
+.add-input-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 12px;
+    padding: 6px 8px;
+    margin-top: 5px;
+}
+
+.add-input-btn:hover {
+    background-color: #218838;
+}
+
+/* Scrollable Table for Small Screens */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
