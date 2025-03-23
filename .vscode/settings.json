@@ -1,0 +1,5 @@
+{
+    "git.blame.editorDecoration.enabled": true,
+    "git.allowNoVerifyCommit": true,
+    "git.allowForcePush": false
+}
